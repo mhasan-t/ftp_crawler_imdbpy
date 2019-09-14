@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie List</title>
+</head>
+<body>
+
+
+{% for movie in movies %}
+
+    {{ movie.name }}
+    {{ movie.type }}
+    {{ movie.year }}
+    {{ movie.photo }}
+    <a href="{% url 'movie:details' movie.pk %}">Details</a>
+    <img src="{{ MEDIA_URL }}{{ movie.photo }}" height="50" width="50">
+
+
+{% endfor %}
+
+</body>
+</html>

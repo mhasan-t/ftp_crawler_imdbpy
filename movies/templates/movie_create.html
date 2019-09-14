@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Movie</title>
+</head>
+<body>
+
+    <form enctype="multipart/form-data" method="post" action="">
+        {% csrf_token %}
+        {{ form }}
+
+        <input type="submit" value="Save">
+    </form>
+
+
+</body>
+</html>
