@@ -9,8 +9,8 @@ app_name = 'movie'
 urlpatterns = [
     path('', views.MovieList.as_view(), name='list'),
     path('<int:pk>/', views.MovieDetails.as_view(), name='details'),
-    path('watch/<int:pk>/', views.MovieWatch.as_view(), name='watch'),
-    path('create/', views.MovieCreate.as_view(), name='create')
+    path('create/', views.MovieCreate.as_view(), name='create'),
+    path('auto-create/', views.MovieAutoCreate.as_view(), name='auto-create')
 ]
 
 
