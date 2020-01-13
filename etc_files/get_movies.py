@@ -61,37 +61,38 @@ def get_movie(directory):
 
             print("MODEL DATA - ")
             print(model_data)
+            m = model_data
+            img = m['photo']
+            del m['photo']
+
+            try:
+                m_obj = Movies.objects.create(**m)
+            except:
+                time = datetime.now()
+                errorFile = open("Error_Data.txt")
+                errorFile.write("\n TIME " + time + " *** " + m + "\n")
+                errorFile.close()
+
+            timer = 0
+
+            while not os.path.isfile(img) or timer > 10:
+                sleep(2)
+                timer += 1
+
+            try:
+                img_obj = open(img, "rb")
+                img_file = ImageFile(img_obj)
+                m_obj.photo.save(m['name'], img_file, save=True)
+                img_obj.close()
+            except:
+                img_obj = open("coverNotFound.png", "rb")
+                img_file = ImageFile(img_obj)
+                m_obj.photo.save(m['name'], img_file, save=True)
+                img_obj.close()
+
             # movies_from_imdb.append(model_data)
 
-    mvs = movies_from_imdb
-    for m in mvs:
-        img = m['photo']
-        del m['photo']
 
-        try:
-            m_obj = Movies.objects.create(** m)
-        except:
-            time = datetime.now()
-            errorFile = open("Error_Data.txt")
-            errorFile.write("\n TIME "+time+" *** "+m+"\n")
-            errorFile.close()
-
-        timer = 0
-
-        while not os.path.isfile(img) or timer > 10:
-            sleep(2)
-            timer += 1
-
-        try:
-            img_obj = open(img, "rb")
-            img_file = ImageFile(img_obj)
-            m_obj.photo.save(m['name'], img_file, save=True)
-            img_obj.close()
-        except:
-            img_obj = open("coverNotFound.png", "rb")
-            img_file = ImageFile(img_obj)
-            m_obj.photo.save(m['name'], img_file, save=True)
-            img_obj.close()
 
 
     # for y in data_list[1]:

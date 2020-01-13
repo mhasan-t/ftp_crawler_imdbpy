@@ -55,22 +55,7 @@ class MovieAutoCreate(CreateView):
         del d['csrfmiddlewaretoken']
 
         directory = d["directory"]
-        mvs = get_movie(directory)
-
-        for m in mvs:
-            img = m['photo']
-            del m['photo']
-            m_obj = Movies.objects.create(**m)
-            timer = 0
-
-            while not os.path.isfile(img) or timer > 5:
-                sleep(2)
-                timer += 1
-
-            img_obj = open(img, "rb")
-            img_file = ImageFile(img_obj)
-            m_obj.photo.save(m['name'], img_file, save=True)
-
+        get_movie(directory)
         return redirect(reverse_lazy('movie:list'))
 
 
