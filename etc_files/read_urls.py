@@ -23,6 +23,7 @@ def read_url(url):
             if url_new.endswith(".mp4") or url_new.endswith(".mkv"):
                 # print("GOT URL "+url_new)
                 files.append(url_new)
+                print("FOUND - "+url_new)
 
         except:
             file_name = i.get("href")

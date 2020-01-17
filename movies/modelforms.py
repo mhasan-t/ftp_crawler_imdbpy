@@ -9,5 +9,9 @@ class CreateMoviesForm(forms.ModelForm):
         fields = ('name', 'year', 'genre', 'photo', 'cast', 'plot', 'synopsis', 'video')
 
 
-class Auto(forms.Form):
-    description = forms.CharField()
+# class Auto(forms.Form):
+#     description = forms.CharField()
+
+class CreateFromVideo(forms.Form):
+    name = forms.CharField(max_length=1000)
+    video = forms.CharField(max_length=9999)

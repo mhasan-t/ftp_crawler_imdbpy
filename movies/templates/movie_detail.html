@@ -7,7 +7,7 @@
     <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
-    {% load staticfiles %}
+    {% load static %}
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     {{ movie.year }}
     {{ movie.photo }}
     {{ movie.video }}
-    <a href="{% url 'movie:watch' movie.pk %}">Watch</a>
+{#    <a href="{% url 'movie:watch' movie.pk %}">Watch</a>#}
 
     <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
     poster="/media/{{ movie.photo }}"  data-setup='{}'>

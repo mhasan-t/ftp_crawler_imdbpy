@@ -5,10 +5,11 @@ from django.core.files.base import ContentFile
 from django.core.files.images import ImageFile
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, View
+from django.views.generic import ListView, DetailView, CreateView, View, FormView
 from pytz import unicode
 
-from movies.modelforms import CreateMoviesForm, Auto
+from etc_files.get_movies import get_movie_file
+from movies.modelforms import CreateMoviesForm, CreateFromVideo
 from movies.models import Movies
 
 from etc_files import read_url, take_name, getMovieDatabyName, getMovieDatabyID, get_movie
@@ -40,7 +41,7 @@ class MovieCreate(CreateView):
 
 class MovieAutoCreate(CreateView):
     template_name = "movie_auto.html"
-    form_class = Auto
+    # form_class = Auto
 
     def get(self, request, *args, **kwargs):
         return render(request, template_name=self.template_name)
@@ -59,4 +60,23 @@ class MovieAutoCreate(CreateView):
         return redirect(reverse_lazy('movie:list'))
 
 
+class addMovieWithFile(CreateView):
+    template_name = "movie_create_file.html"
+    # form_class = CreateFromVideo
+    f = CreateFromVideo()
 
+    def get(self, request, *args, **kwargs):
+        return render(request, template_name=self.template_name, context={'form': self.f})
+
+    def post(self, request, *args, **kwargs):
+        data = request.POST
+        d = {}
+        for key, value in data.items():
+            d[key] = value
+
+        del d['csrfmiddlewaretoken']
+
+        video = d['video']
+        name = d['name']
+        get_movie_file(video, name)
+        return redirect(reverse_lazy('movie:list'))

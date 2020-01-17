@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98f80aeb-ad7e-46f4-b432-53613d7d828b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/72_Hours_Martyr_Who_Never_Died" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Badhaai_Ho" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Badla" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Battalion_609" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Bombairiya" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Dobaara" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Ribbon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Simmba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/movie_photos/Zero" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Aquaman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/movie_photos/Aquaman" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/movie_photos/Ribbon_62jBkWT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/movie_photos/Zero_tvrFGVp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/templates/movie_create_file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etc_files/get_movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/etc_files/get_movies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Anime têma songu 2014 Yome to kakenuketa hibi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Cabaret.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Daas Dev.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Ek Ladki Ko Dekha Toh Aisa Laga.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Fraud Saiyaan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Gaon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Goosebumps 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Gully Boy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Hello!.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Hum chaar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Jagga Jiunda E.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Jalebi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Kaka Ji.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Love Will Take Over.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Luka Chuppi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Manikarnika The Queen of Jhansi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Milan Talkies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Operation Cobra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc_files/imdb_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/etc_files/imdb_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc_files/read_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/etc_files/read_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Badhaai Ho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Badla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Battalion 609.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Bombairiya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Dobaara.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagesFromIMDBtemp/Simmba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Badhaai_Ho" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Badla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Battalion_609" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Bombairiya" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Dobaara" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/movie_photos/Simmba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies/modelforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/modelforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies/templates/movie_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/movies/templates/movie_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,7 +80,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -108,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.movie_types">
+  <component name="RunManager" selected="Python.imdb_api">
     <configuration name="Test: etc_files" type="DjangoTestsConfigurationType" temporary="true">
       <module name="ISP_FTP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,7 +125,7 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="imdb_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ISP_FTP" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +138,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/etc_files/image_down.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/etc_files/imdb_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,13 +238,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.imdb_api" />
         <item itemvalue="Python.movie_types" />
         <item itemvalue="Python.views" />
         <item itemvalue="Python.read_url" />
         <item itemvalue="Django tests.Test: etc_files" />
-        <item itemvalue="Python.get_image" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -285,7 +284,9 @@
       <workItem from="1578166697140" duration="687000" />
       <workItem from="1578231842841" duration="2955000" />
       <workItem from="1578797226048" duration="1030000" />
-      <workItem from="1578888150525" duration="7003000" />
+      <workItem from="1578888150525" duration="7300000" />
+      <workItem from="1578975095539" duration="4901000" />
+      <workItem from="1579236418133" duration="3183000" />
     </task>
     <task id="LOCAL-00001" summary="Stable">
       <created>1578904768920</created>
@@ -294,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578904768920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0">
+      <created>1578908699881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578908699881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -328,7 +336,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stable" />
+    <MESSAGE value="1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ISP_FTP$Test__etc_files.coverage" NAME="Test: etc_files Coverage Results" MODIFIED="1575307576828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -337,6 +346,7 @@
     <SUITE FILE_PATH="coverage/ISP_FTP$imdb.coverage" NAME="imdb Coverage Results" MODIFIED="1575227150296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
     <SUITE FILE_PATH="coverage/ISP_FTP$take_names.coverage" NAME="take_names Coverage Results" MODIFIED="1573836567979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
     <SUITE FILE_PATH="coverage/ISP_FTP$views.coverage" NAME="views Coverage Results" MODIFIED="1575311701388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movies" />
+    <SUITE FILE_PATH="coverage/ISP_FTP$imdb_api.coverage" NAME="imdb_api Coverage Results" MODIFIED="1578990062885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
     <SUITE FILE_PATH="coverage/ISP_FTP$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1573840556751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
     <SUITE FILE_PATH="coverage/ISP_FTP$movie_types.coverage" NAME="movie_types Coverage Results" MODIFIED="1575311794975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
     <SUITE FILE_PATH="coverage/ISP_FTP$get_image.coverage" NAME="get_image Coverage Results" MODIFIED="1575304884275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/etc_files" />
