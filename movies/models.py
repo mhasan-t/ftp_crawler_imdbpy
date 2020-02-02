@@ -14,11 +14,9 @@ class Movies(models.Model):
     manual = models.BooleanField(default=True)
     date_added = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
+    rating = models.CharField(max_length=4, null=True)
+    imdbid = models.CharField(max_length=20, null=True)
 
     def __str__(self):
         return '{name}'.format(name=self.name)
-
-
-class Error(models.Model):
-    err = models.CharField(max_length=9999)
 

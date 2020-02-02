@@ -52,8 +52,13 @@ def getMovieDatabyName(name):
     if movie.get("cover url") is not None:
         cover = movie.get("cover url")
 
+    rating = ""
+    if movie.get("rating") is not None:
+        rating = movie.get("rating")
+
+    id = movie.getID()
     # print("GOT MOVIE DATA FOR "+title)
-    return title, year, genre, plot, synopsis, castStr, str(cover)
+    return title, year, genre, plot, synopsis, castStr, str(cover), rating, id
 
 
 def getMovieDatabyID(mvid):
@@ -87,10 +92,14 @@ def getMovieDatabyID(mvid):
     if movie.get("cover url") is not None:
         cover = movie.get("cover url")
 
+    rating = ""
+    if movie.get("rating") is not None:
+        rating = movie.get("rating")
 
+    id = movie.getID()
 
     # print("GOT MOVIE DATA FOR " + title)
-    return title, year, genre, plot, synopsis, castStr, str(cover)
+    return title, year, genre, plot, synopsis, castStr, str(cover), rating, id
 
 
 def getSeriesDatabyName(name):
@@ -144,18 +153,22 @@ def getSeriesDatabyName(name):
     if movie.get("cover url") is not None:
         cover = movie.get("cover url")
 
+    rating = ""
+    if movie.get("rating") is not None:
+        rating = movie.get("rating")
 
-
+    id = movie.getID()
     # print("GOT MOVIE DATA FOR "+title)
-    return title, year, genre, plot, synopsis, castStr, str(cover)
+    return title, year, genre, plot, synopsis, castStr, str(cover), rating, id
+
 
 
 # ia = imdb.IMDb(accessSystem='http', reraiseExceptions=True, loggingLevel="critical")
 # movies = ia.search_movie("2012 Supernova (2009)")
 # print(movies[0])
 
-# x = getMovieDatabyID(mvid='5753856')
-# x = getSeriesDatabyName("Dark")
+# x = getMovieDatabyID(mvid='0944947')
+# # x = getSeriesDatabyName("Game of Thrones")
 # if x is not False:
 #     print(x)
 # else:

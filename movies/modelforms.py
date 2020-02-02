@@ -6,7 +6,7 @@ from movies.models import Movies
 class CreateMoviesForm(forms.ModelForm):
     class Meta:
         model = Movies
-        fields = ('name', 'year', 'genre', 'photo', 'cast', 'plot', 'synopsis', 'video')
+        fields = ('name', 'year', 'genre', 'photo', 'cast', 'plot', 'synopsis', 'video', 'imdbid')
 
 
 # class Auto(forms.Form):

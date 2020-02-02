@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for tv in tvs %}
+
+    {{ tv.name }}
+    {{ tv.type }}
+    {{ tv.year }}
+    {{ tv.photo }}
+    <a href="{% url 'tv:details' tv.pk %}">Details</a>
+    <img src="{{ MEDIA_URL }}{{ tv.photo }}" height="50" width="50">
+
+
+{% endfor %}
+
+</body>
+</html>

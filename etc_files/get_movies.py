@@ -26,6 +26,7 @@ def stripForFileName(st):
     return result
 
 def createMovie(m):
+    global m_obj
     img = m['photo']
     del m['photo']
 
@@ -34,7 +35,7 @@ def createMovie(m):
     except:
         time = datetime.now()
         errorFile = open("Error_Data.txt")
-        errorFile.write("\n TIME " + time + " *** " + m + "\n")
+        errorFile.write("\n TIME " + str(time) + " *** " + m + "\n")
         errorFile.close()
 
     timer = 0
@@ -54,12 +55,6 @@ def createMovie(m):
         m_obj.photo.save(m['name'], img_file, save=True)
         img_obj.close()
 
-    # for y in data_list[1]:
-    #     dt = {
-    #         "video": directory,
-    #         "manual": False,
-    #         "imdb_found": False
-    #     }
 
 
 
@@ -89,10 +84,14 @@ def get_movie(directory):
             model_data["plot"] = movie_data[3]
             model_data["synopsis"] = movie_data[4]
             model_data["cast"] = movie_data[5]
-            downed_image = down_image(movie_data[6], stripForFileName(movie_data[0]))
-            model_data["photo"] = MEDIA_ROOT+"/imagesFromIMDBtemp/" +downed_image
+            if movie_data[6] != "":
+                downed_image = down_image(movie_data[6], stripForFileName(movie_data[0]))
+                model_data["photo"] = MEDIA_ROOT+"/imagesFromIMDBtemp/" +downed_image
+            else:
+                model_data["photo"] = ""
             model_data["manual"] = False
             model_data["imdb_found"] = True
+            model_data["rating"] = movie_data[7]
 
             print("MODEL DATA - ")
             print(model_data)
@@ -122,10 +121,14 @@ def get_movie_file(video, name):
         model_data["plot"] = movie_data[3]
         model_data["synopsis"] = movie_data[4]
         model_data["cast"] = movie_data[5]
-        downed_image = down_image(movie_data[6], stripForFileName(movie_data[0]))
-        model_data["photo"] = MEDIA_ROOT + "/imagesFromIMDBtemp/" + downed_image
+        if movie_data[6] != "":
+            downed_image = down_image(movie_data[6], stripForFileName(movie_data[0]))
+            model_data["photo"] = MEDIA_ROOT + "/imagesFromIMDBtemp/" + downed_image
+        else:
+            model_data["photo"] = ""
         model_data["manual"] = False
         model_data["imdb_found"] = True
+        model_data["rating"] = movie_data[7]
 
         print("MODEL DATA - ")
         print(model_data)

@@ -22,7 +22,7 @@ from ISP_FTP import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/', include('movies.urls'), name='movies'),
-    # path('tv/', include('tv.urls'), name='tv'),
+    path('tv/', include('tv_series.urls'), name='tv'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

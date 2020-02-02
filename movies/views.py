@@ -1,18 +1,13 @@
-import os
-from io import BytesIO
-from time import sleep
-from django.core.files.base import ContentFile
-from django.core.files.images import ImageFile
+
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, View, FormView
-from pytz import unicode
+from django.views.generic import ListView, DetailView, CreateView
 
-from etc_files.get_movies import get_movie_file
+
 from movies.modelforms import CreateMoviesForm, CreateFromVideo
 from movies.models import Movies
 
-from etc_files import read_url, take_name, getMovieDatabyName, getMovieDatabyID, get_movie
+from etc_files import get_movie, get_movie_file
 
 
 class MovieList(ListView):

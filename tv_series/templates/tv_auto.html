@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movies</title>
+</head>
+<body>
+
+
+<form method="post" action=".">
+    {% csrf_token %}
+    <input type="text" name="directory">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
