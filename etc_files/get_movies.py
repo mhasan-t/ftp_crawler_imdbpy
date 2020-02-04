@@ -92,9 +92,10 @@ def get_movie(directory):
             model_data["manual"] = False
             model_data["imdb_found"] = True
             model_data["rating"] = movie_data[7]
+            model_data["imdbid"] = movie_data[8]
 
-            print("MODEL DATA - ")
-            print(model_data)
+            print("CREATED - ", movie_data[0],"## IMDB ID - ", movie_data[8])
+            # print(model_data)
             m = model_data
             createMovie(m)
 
@@ -129,9 +130,10 @@ def get_movie_file(video, name):
         model_data["manual"] = False
         model_data["imdb_found"] = True
         model_data["rating"] = movie_data[7]
+        model_data["imdbid"] = movie_data[8]
 
-        print("MODEL DATA - ")
-        print(model_data)
+        print("CREATED - ", movie_data[0],"## IMDB ID - ", movie_data[8])
+        # print(model_data)
         m = model_data
         createMovie(m)
 

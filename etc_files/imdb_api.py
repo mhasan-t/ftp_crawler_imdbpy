@@ -49,8 +49,8 @@ def getMovieDatabyName(name):
 
         castStr = ", ".join(cast)
     cover = ""
-    if movie.get("cover url") is not None:
-        cover = movie.get("cover url")
+    if movie.get("full-size cover url") is not None:
+        cover = movie.get("full-size cover url")
 
     rating = ""
     if movie.get("rating") is not None:
@@ -89,8 +89,8 @@ def getMovieDatabyID(mvid):
         castStr = ", ".join(cast)
 
     cover = ""
-    if movie.get("cover url") is not None:
-        cover = movie.get("cover url")
+    if movie.get("full-size cover url") is not None:
+        cover = movie.get("full-size cover url")
 
     rating = ""
     if movie.get("rating") is not None:
@@ -150,8 +150,8 @@ def getSeriesDatabyName(name):
 
         castStr = ", ".join(cast)
     cover = ""
-    if movie.get("cover url") is not None:
-        cover = movie.get("cover url")
+    if movie.get("full-size cover url") is not None:
+        cover = movie.get("full-size cover url")
 
     rating = ""
     if movie.get("rating") is not None:
@@ -167,7 +167,7 @@ def getSeriesDatabyName(name):
 # movies = ia.search_movie("2012 Supernova (2009)")
 # print(movies[0])
 
-# x = getMovieDatabyID(mvid='0944947')
+# x = getMovieDatabyID(mvid='3256226')
 # # x = getSeriesDatabyName("Game of Thrones")
 # if x is not False:
 #     print(x)

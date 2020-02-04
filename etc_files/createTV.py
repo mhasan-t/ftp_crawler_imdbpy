@@ -79,8 +79,8 @@ def get_tv(directory):
             model_data["rating"] = movie_data[7]
             model_data["imdbid"] = movie_data[8]
 
-            print("MODEL DATA - ")
-            print(model_data)
+            print("CREATED - ", movie_data[0],"## IMDB ID - ", movie_data[8])
+            # print(model_data)
             m = model_data
             createTV(m)
 
@@ -117,8 +117,8 @@ def get_tv_file(video, name):
         model_data["rating"] = movie_data[7]
         model_data["imdbid"] = movie_data[8]
 
-        print("MODEL DATA - ")
-        print(model_data)
+        print("CREATED - ", movie_data[0],"## IMDB ID - ", movie_data[8])
+        # print(model_data)
         m = model_data
         createTV(m)
 
