@@ -1,0 +1,13 @@
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+body{
+  background-color: grey;
+}
+
+#navbar{
+  background-color: #334d4d;
+}

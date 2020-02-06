@@ -1,0 +1,16 @@
+body{
+    background-color:#476b6b;
+    color: #ffffff;
+  }
+
+#moviesContainer{
+    background-color:#476b6b;
+    color: #ffffff;
+}
+
+.movieCard{
+    background-color:#476b6b;
+    color: #ffffff;
+    width: 20vw;
+    height: 60vh;
+}

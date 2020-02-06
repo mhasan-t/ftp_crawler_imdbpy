@@ -79,7 +79,8 @@ def get_movie(directory):
         else:
             model_data = {"name": movie_data[0], "video": x, "year": movie_data[1]}
             da = movie_data[2]
-            s = json.dumps(da)
+            s = ", ".join(da)
+            # s = json.dumps(da)
             model_data["genre"] = s
             model_data["plot"] = movie_data[3]
             model_data["synopsis"] = movie_data[4]
@@ -117,7 +118,7 @@ def get_movie_file(video, name):
     else:
         model_data = {"name": movie_data[0], "video": video, "year": movie_data[1]}
         da = movie_data[2]
-        s = json.dumps(da)
+        s = ", ".join(da)
         model_data["genre"] = s
         model_data["plot"] = movie_data[3]
         model_data["synopsis"] = movie_data[4]

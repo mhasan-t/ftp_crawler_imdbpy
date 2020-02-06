@@ -3,29 +3,27 @@
 
  <link rel="stylesheet" href="../static/bootstrap/dist/css/bootstrap.min.css">
     <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script> 
-<body class="container-fluid pt-3">
 
-    <div class="row justify-content-center">
+
+
+<link rel="stylesheet" href="../../static/css/movie_list.css">
+
+<body class="container-fluid pt-3">
+    <!-- row justify-content-center -->
+    <div id="moviesContainer" class="d-flex flex-lg-wrap justify-content-center">
         {% for movie in movies %}
-        <a href="{% url 'movie:details' movie.pk %}">
-            <div class="card img-fluid align-items-center text-info" >
-                <img class="card-img-top pr-2 pl-2 pb-2 " src="{{ MEDIA_URL }}{{ movie.photo }}" alt="{{ movie.name }}" style="width:20vw">
-                <h4 class="card-title">{{ movie.name }}</h4>
-            </div>
-        </a>
+        <div class="movieCard">
+            <a href="{% url 'movie:details' movie.pk %}">
+                <div class="card img-fluid align-items-center text-info bg-dark" style="width: 20vw; height: 60vh;">
+                    <img class="card-img-top pr-2 pl-2 pb-2 " src="{{ MEDIA_URL }}{{ movie.photo }}" alt="{{ movie.name }}" style="width:20vw; height: 40vh;">
+                    <h4 class="card-title" style="text-align: center;">{{ movie.name }}</h4>
+                </div>
+            </a>
+        </div>
         {% endfor %}
     </div>
 
 
-
-
-<!--     
-    {{ movie.type }}
-    {{ movie.year }}
-    {{ movie.photo }}
-    <a href="">Details</a>
-    <img src="" height="50" width="50">
-    <br> -->
 
 
 

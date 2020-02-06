@@ -1,31 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Detail</title>
+{% extends 'base.html' %}
+{% block content %}
 
-    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-    <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
-    {% load static %}
-</head>
-<body>
+<link rel="stylesheet" href="../../static/bootstrap/dist/css/bootstrap.min.css">
+<script src="../../static/bootstrap/dist/js/bootstrap.min.js"></script> 
 
-    {{ movie.name }}
-    {{ movie.type }}
-    {{ movie.year }}
-    {{ movie.photo }}
-    {{ movie.video }}
-{#    <a href="{% url 'movie:watch' movie.pk %}">Watch</a>#}
+<link rel="stylesheet" href="../../static/css/movie_detail.css">
 
-    <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
-    poster="/media/{{ movie.photo }}"  data-setup='{}'>
-      <source src=' {{ movie.video }}' type='video/mp4'>
-      <p class='vjs-no-js'>
-          To view this video please enable JavaScript, and consider upgrading to a web browser that
-          <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-      </p>
-    </video>
+<body class="container-fluid pt-3">
+    
+    <div class="d-flex">
+
+        <!-- LEFT -->
+        <div id="leftBar" class="d-flex flex-column align-items-center pt-5" style="width: 48vw;" >
+            <h4>{{ movie.name }}</h4> 
+            <h6>{{ movie.genre }}</h6>
+            <h6>{{ movie.year }}</h6>
+            <h6>{{ movie.rating }}</h6>
+            <h6 class="pr-5 pl-5" >{{ movie.plot }}</h6>
+            <img src="{{ MEDIA_URL }}{{ movie.photo }}" alt="{{ movie.name }}" style="width: 15vw;">
+        </div>
+
+        
+
+        <!-- RIGHT -->
+        <div id="rightBar" class=""  style="width: 50vw; padding-top: 22vh;">
+
+            <video id='my-video' class='video-js' controls preload='auto' width='900vw' height='400vh'
+            poster="/media/{{ movie.photo }}"  data-setup='{}'>
+            <source src=' {{ movie.video }}' type='video/mp4'>
+            <p class='vjs-no-js'>
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+            </p>
+            </video>
+            
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+    <div id="bottomBar pt-5" style="margin-top: 5vh;">
+
+        <div class="pr-5 pl-5">
+            <h4>Synopsis :</h4>
+            <h6 class="pr-5 pl-5">{{ movie.synopsis }}</h6>
+        </div>
+        
+
+
+        <div class="pr-5 pl-5">
+            <h4>Cast :</h4>
+            <h6 class="pr-5 pl-5">{{ movie.cast }}</h6>
+        </div>
+    </div>
+    
+    
+
 
 </body>
-</html>
+{% endblock %}
